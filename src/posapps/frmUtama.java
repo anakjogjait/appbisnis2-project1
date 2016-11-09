@@ -71,6 +71,11 @@ public class frmUtama extends javax.swing.JFrame {
         mnED.add(mnSpl);
 
         mnBrg.setText("Barang");
+        mnBrg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnBrgActionPerformed(evt);
+            }
+        });
         mnED.add(mnBrg);
 
         mnRek.setText("Rekening");
@@ -109,6 +114,11 @@ public class frmUtama extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mnBrgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnBrgActionPerformed
+        frmBarang f = new frmBarang(this, true);
+        f.setVisible(true);
+    }//GEN-LAST:event_mnBrgActionPerformed
 
     /**
      * @param args the command line arguments

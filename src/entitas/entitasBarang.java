@@ -77,5 +77,19 @@ public class entitasBarang {
     public void setHargaJual(float hargaJual) {
         this.hargaJual = hargaJual;
     }
+
+    /**
+     * @return the hargaBeli
+     */
+    public float getHargaBeli() {
+        return hargaBeli;
+    }
+
+    /**
+     * @param hargaBeli the hargaBeli to set
+     */
+    public void setHargaBeli(float hargaBeli) {
+        this.hargaBeli = hargaBeli;
+    }
    
 }
