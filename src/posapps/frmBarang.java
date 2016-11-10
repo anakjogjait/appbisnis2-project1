@@ -9,7 +9,7 @@ public class frmBarang extends javax.swing.JDialog {
     private DefaultTableModel tmodel;
     
     public frmBarang(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+        super(parent,"FORM ENTRI BARANG");
         initComponents();
         setLocationRelativeTo(this);
         this.tampilBarang();

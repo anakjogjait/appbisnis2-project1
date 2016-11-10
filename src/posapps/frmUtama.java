@@ -5,6 +5,8 @@
  */
 package posapps;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author MasterPro
@@ -16,6 +18,8 @@ public class frmUtama extends javax.swing.JFrame {
      */
     public frmUtama() {
         initComponents();
+        setTitle("Point Of Sales System - 11140360");
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
