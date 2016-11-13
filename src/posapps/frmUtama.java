@@ -69,6 +69,11 @@ public class frmUtama extends javax.swing.JFrame {
         mnED.add(mnKat);
 
         mnPlg.setText("Pelanggan");
+        mnPlg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnPlgActionPerformed(evt);
+            }
+        });
         mnED.add(mnPlg);
 
         mnSpl.setText("Supplier");
@@ -123,6 +128,11 @@ public class frmUtama extends javax.swing.JFrame {
         frmBarang f = new frmBarang(this, true);
         f.setVisible(true);
     }//GEN-LAST:event_mnBrgActionPerformed
+
+    private void mnPlgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnPlgActionPerformed
+        frmPelanggan fp = new frmPelanggan(this, true);
+        fp.setVisible(true);
+    }//GEN-LAST:event_mnPlgActionPerformed
 
     /**
      * @param args the command line arguments
