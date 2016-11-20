@@ -42,6 +42,7 @@ public class frmUtama extends javax.swing.JFrame {
         mnSpl = new javax.swing.JMenuItem();
         mnBrg = new javax.swing.JMenuItem();
         mnRek = new javax.swing.JMenuItem();
+        mnAk = new javax.swing.JMenuItem();
         mnTrans = new javax.swing.JMenu();
         mnPgb = new javax.swing.JMenuItem();
         mnPjb = new javax.swing.JMenuItem();
@@ -95,6 +96,14 @@ public class frmUtama extends javax.swing.JFrame {
         mnRek.setText("Rekening");
         mnED.add(mnRek);
 
+        mnAk.setText("Akun");
+        mnAk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnAkActionPerformed(evt);
+            }
+        });
+        mnED.add(mnAk);
+
         jMenuBar1.add(mnED);
 
         mnTrans.setText("Transaksi");
@@ -143,6 +152,10 @@ public class frmUtama extends javax.swing.JFrame {
         new frmSupplier(this, true).setVisible(true);
     }//GEN-LAST:event_mnSplActionPerformed
 
+    private void mnAkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnAkActionPerformed
+        new frmAkun(this, true).setVisible(true);
+    }//GEN-LAST:event_mnAkActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -180,6 +193,7 @@ public class frmUtama extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem mnAk;
     private javax.swing.JMenuItem mnBrg;
     private javax.swing.JMenu mnED;
     private javax.swing.JMenu mnFile;
